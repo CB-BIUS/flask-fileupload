@@ -24,8 +24,8 @@ def upload():
     newFile = FileContents(name=file.filename, data=file.read())
     db.session.add(newFile)
     db.session.commit()
-
-    return 'Saved ' + file.filename + ' to the database!'
+    print(file)
+    return "<h3>Saved " + file.filename + " to the database!</h3>"
 
 
 if __name__ == '__main__':
