@@ -13,13 +13,16 @@
 <body>
 <div class="container">
     <h1>File Input</h1>
-    <form method="POST" action="/upload" enctype="multipart/form-data" accept="video/* capture=camcorder" >
+    <form method="POST" action="/upload" enctype="multipart/form-data" accept="video/*  capture=camcorder" >
         <div class="form-group">
             <label for="inputFile">File Input</label>
-            <input type="file" id="inputFile" name="inputFile">
+            <input type="file" id="inputFile" name="file">
         </div>
+        <br>
         <button type="submit" class="btn btn-default">Submit</button>
-        <video id="image" width="30%" height="50%" controls></video>
+        <br>
+        <br>
+        <video id="image" width="30%" height="50%" controls="controls" autoplay preload="metadata"></video>
     </form>
 
     <script>
